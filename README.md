@@ -1,4 +1,4 @@
-The counter moduleis a four-bit up-down counter. It has a CLK input, a UD input which is a line that determines if the counter will count up or down. 
+The counter module is a four-bit up-down counter. It has a CLK input, a UD input which is a line that determines if the counter will count up or down. 
 It has an output that is a register of four bits which is the Count, and lastly, it has a Clear input to reset the Count to zero. 
 Line 12, there is an always block that works whenever the Clear line changes, and if the Clear line is zero, then the Count goes back to zero. 
 In line 16, another always block that works on the positive edge of the CLK line, and its code is a case statement that pays attention to the concatenation of the UD and the 
